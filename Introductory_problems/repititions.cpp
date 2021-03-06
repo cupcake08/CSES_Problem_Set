@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
-ll solve(string s,int startIdx){
+ll solve(string s){
         ll len=s.size();
         ll cnt=1,gc=1;
         for(int i=1;i<len;i++){
@@ -18,6 +18,6 @@ int main(){
     ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
     string s;
     cin>>s;
-    cout<<solve(s,0)<<'\n';
+    cout<<solve(s)<<'\n';
     return 0;
 }
